@@ -21,7 +21,7 @@ export default function OrderButton() {
           exit={{ opacity: 0, scale: 0.5, y: 50 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="fixed bottom-8 right-8 z-[999] btn btn-red shadow-2xl px-10 py-5 text-lg font-black group"
+          className="fixed bottom-8 right-8 z-[999] btn btn-red shadow-red-glow px-10 py-5 text-lg font-black group"
         >
           Order Now
           <motion.div

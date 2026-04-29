@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-heading: "Playfair Display", serif;
+  --font-heading: "Georgia", serif;
   --font-body: "DM Sans", sans-serif;
   
   --color-primary-red: #E4002B;
@@ -12,25 +12,26 @@
   --color-accent-gold: #F5A623;
   
   --shadow-custom: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-red-glow: 0 10px 20px rgba(228, 0, 43, 0.2);
 }
 
 @layer base {
   body {
-    @apply font-body text-charcoal bg-white leading-relaxed overflow-x-hidden;
+    @apply font-body text-charcoal bg-cream leading-relaxed overflow-x-hidden;
   }
   
   h1, h2, h3, h4 {
-    @apply font-heading font-extrabold;
+    @apply font-heading font-black tracking-tight;
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-block px-8 py-3.5 rounded-full font-bold cursor-pointer text-center border-none text-base transition-all duration-400 ease-out;
+    @apply inline-block px-8 py-3.5 rounded-full font-bold cursor-pointer text-center border-none text-sm uppercase tracking-widest transition-all duration-400 ease-out;
   }
   
   .btn-red {
-    @apply bg-primary-red text-white hover:bg-deep-red hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(228,0,43,0.3)];
+    @apply bg-primary-red text-white shadow-lg shadow-red-200/50 hover:bg-deep-red hover:-translate-y-1 hover:shadow-red-glow;
   }
   
   .btn-outline {
@@ -38,6 +39,6 @@
   }
   
   .btn-white {
-    @apply bg-white text-primary-red hover:bg-accent-gold hover:text-white hover:-translate-y-1;
+    @apply bg-white text-primary-red shadow-lg hover:bg-accent-gold hover:text-white hover:-translate-y-1;
   }
 }

@@ -18,13 +18,13 @@ export default function Why() {
               <h2 className="text-5xl md:text-6xl mb-8">More Than Just Chicken</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {features.map((f, i) => (
-                  <div key={i} className="flex gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <div className="text-primary-red mt-1 shrink-0">
+                  <div key={i} className="flex gap-4 items-center bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-cream flex items-center justify-center text-primary-red shrink-0">
                       {f.icon}
                     </div>
                     <div>
-                      <h5 className="text-xl font-bold mb-1">{f.title}</h5>
-                      <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                      <h4 className="font-black text-sm uppercase tracking-wider mb-0.5">{f.title}</h4>
+                      <p className="text-gray-500 text-xs leading-relaxed">{f.desc}</p>
                     </div>
                   </div>
                 ))}

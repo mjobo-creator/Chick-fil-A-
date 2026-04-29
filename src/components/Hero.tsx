@@ -13,18 +13,18 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-block bg-white px-6 py-4 rounded-2xl shadow-custom rotate-2 mb-6 font-extrabold flex items-center gap-2"
+              className="inline-block bg-accent-gold text-white text-[10px] font-black px-4 py-1.5 rounded-full mb-6 uppercase tracking-[0.2em] shadow-sm"
             >
-              🏆 America's #1 Fast Food Chain
+              America's Favorite Sandwich
             </motion.div>
             
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.1] mb-6 text-charcoal"
+              className="text-6xl md:text-7xl lg:text-[84px] leading-[0.9] mb-8 text-charcoal tracking-tighter"
             >
-              Eat More <span className="text-primary-red block">Chicken.</span> Made With Heart.
+              Eat More <span className="text-primary-red">Chicken.</span> Made With Heart.
             </motion.h1>
             
             <motion.p 

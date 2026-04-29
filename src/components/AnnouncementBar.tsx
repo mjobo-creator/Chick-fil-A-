@@ -12,7 +12,7 @@ export default function AnnouncementBar() {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: 'auto', opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="relative bg-primary-red text-white py-2.5 px-4 text-center text-sm font-bold z-[1001]"
+          className="relative bg-primary-red text-white py-2.5 px-4 text-center text-[10px] uppercase font-black tracking-[0.25em] z-[1001]"
         >
           <div className="container mx-auto pr-10">
             🔥 New: Peach Milkshake is back for summer!{' '}

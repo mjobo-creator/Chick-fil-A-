@@ -25,14 +25,14 @@ export default function Navbar() {
     <>
       <nav 
         className={`fixed top-0 w-full z-[1000] transition-all duration-400 ${
-          isScrolled ? 'bg-white py-4 shadow-md' : 'bg-transparent py-6'
+          isScrolled ? 'bg-white py-4 border-b border-gray-100' : 'bg-transparent py-6'
         }`}
       >
         <div className="container mx-auto px-5 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2.5 text-3xl font-heading font-black text-primary-red transition-transform hover:scale-105">
-            <svg viewBox="0 0 100 100" className="w-10 h-10">
-              <path fill="currentColor" d="M20,50 C20,30 40,20 50,20 C60,20 80,30 80,50 C80,70 60,80 50,80 C40,80 20,70 20,50 M30,45 A5,5 0 1,0 35,45 M65,45 A5,5 0 1,0 70,45 M40,65 Q50,75 60,65" />
-            </svg>
+          <a href="#" className="flex items-center gap-3 text-2xl font-heading font-black text-primary-red tracking-tight transition-transform hover:scale-105">
+            <div className="w-10 h-10 bg-primary-red rounded-full flex items-center justify-center">
+              <div className="w-6 h-6 border-4 border-white rounded-full"></div>
+            </div>
             Chick-fil-A
           </a>
 
